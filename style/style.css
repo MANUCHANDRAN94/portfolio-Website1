@@ -1,13 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body {
-  background-color: #363636;
-  opacity: 0.7;
+  background-color: #888888 ;
 }
 
 #Header {
   background-image: url("../Images/background2.jpg");
-  background-size: 100%;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 60vh;
+  background-size: 100% 60vh;
 }
 
 #Header .nav-link {
@@ -18,13 +21,30 @@ body {
   text-decoration: underline;
   text-decoration-color: teal;
 }
-
-/* #about .about-box{
-    margin:0 2%;
-    background-color: white;
-} */
-
-
 .mt-n10 {
-    margin-top: -300px !important;
+    margin-top: -200px !important;
+  }
+
+.card-footer{
+    padding: 10px 150px !important;
+}
+
+
+ .social-media{
+     padding: 10px 0 ;
+    font-size: 20px;
+}
+
+  @media (min-width: 200px){
+      .card-footer{
+          margin-top: 50px;
+      }
+      #about{
+          margin:-200px 10px ;
+      }
+  }
+
+
+  #resume{
+    margin-top: 200px;
   }
