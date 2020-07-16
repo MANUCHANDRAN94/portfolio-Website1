@@ -1,0 +1,30 @@
+body {
+  background-color: #363636;
+  opacity: 0.7;
+}
+
+#Header {
+  background-image: url("../Images/background2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+#Header .nav-link {
+  color: #f4f6ff;
+}
+#Header a:hover {
+  color: #a8df65;
+  text-decoration: underline;
+  text-decoration-color: teal;
+}
+
+/* #about .about-box{
+    margin:0 2%;
+    background-color: white;
+} */
+
+
+.mt-n10 {
+    margin-top: -300px !important;
+  }
