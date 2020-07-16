@@ -2,47 +2,125 @@
     margin: 0px;
     padding: 0px;
 }
+
 body {
   background-color: #888888 ;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
+/* header section Starts_here */
 #Header {
-  background-image: url("../Images/background2.jpg");
+  background-image: url("../Images/vbg.jpg");
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 65vh;
   background-size: 100% 60vh;
 }
+/* LogO */
+#Header .navbar-brand{
+  padding-left: 20px;
+  font-size: 2.5rem;
+  width: auto;
+  color: #f4f6ff;
+  font-family: 'Rowdies', cursive;
+}
+#Header .navbar-brand-style{
+  font-size: 2.8rem;
+  color: #c4fb6d;
+}
+/* LogO end*/
 
+/* navbar content */
 #Header .nav-link {
   color: #f4f6ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media (max-width:750px){
+  #Header .nav-link{ 
+    padding: 2px ;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  }
 }
 #Header a:hover {
   color: #a8df65;
   text-decoration: underline;
   text-decoration-color: teal;
 }
+#Header .toggbtn{
+  background-color: #382c2d;
+    border: 2px solid #33631b;
+    border-radius: 8.25rem;
+}
+/* header section ends here */
+
+/* About Card start */
 .mt-n10 {
-    margin-top: -200px !important;
-  }
+  margin-top: -200px !important;
+}
 
+#about .card-title{
+  font-style: italic;
+}
+#about .card-body-top .card-title-name{
+  font-family: 'Rowdies', cursive;
+}
+#about .card-body-detail .col-form-label{
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+#about .form-group{
+  margin-bottom: 0px;
+  font-size: 900;
+}
+#about .form-group span{
+  padding: 5px 5px 2px;
+  border-radius: 10%;
+  background-color: green;
+  color: white;
+}
+@media (max-width:550px){
+  #about .col-form-label{
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+  }
+  #about .form-group{
+    font-size: 1.2rem;;
+  }
+}
+/* About Card end */
+
+
+/* Card footer start */
 .card-footer{
-    padding: 10px 150px !important;
+  padding: 10px 100px !important;
 }
-
-
- .social-media{
-     padding: 10px 0 ;
-    font-size: 20px;
+.social-media{
+   padding: 10px 0px ;
+  font-size: 20px;
 }
-
-  @media (min-width: 200px){
-      .card-footer{
-          margin-top: 50px;
-      }
-      #about{
-          margin:-200px 10px ;
-      }
+.social-media a:hover{
+color: #a8df65;
+}
+@media (min-width: 200px){
+    .card-footer{
+        margin-top: 50px;
+    }
+    #about{
+        margin:-200px 10px ;
+    }
+}
+@media (max-width:500px){
+  .card-footer{
+    padding: 10px 20px !important;
   }
+}
+/* Card footer end */
+
+
+
 
 
   #resume{
