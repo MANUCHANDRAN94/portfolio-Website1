@@ -17,7 +17,6 @@ body {
 }
 /* LogO */
 #Header .navbar-brand{
-  padding-left: 20px;
   font-size: 2.5rem;
   width: auto;
   color: #f4f6ff;
@@ -25,33 +24,49 @@ body {
 }
 #Header .navbar-brand-style{
   font-size: 2.8rem;
-  color: #c4fb6d;
+  color: #21bf73;
 }
 /* LogO end*/
 
 /* navbar content */
 #Header .nav-link {
   color: #f4f6ff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
-@media (max-width:750px){
+
+@media (max-width:575px){
   #Header .nav-link{ 
-    margin-top: -2px;
-    padding: 0px ;
-  font-size: 0.8rem;
+    margin-top: -5px;
+    padding: 1px ;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
   }
 }
-#Header a:hover {
-  color: #a8df65;
+@media (max-height: 600px){
+  #Header .navbar-brand , #Header .navbar-brand-style {
+    font-size: 2.2rem;
+    padding-top: 0px;
+
+  }
+  #Header .navbar-nav{
+    margin-top: -15px;
+    padding-bottom: 0px;
+    line-height: 1.8rem;
+    /* font-size: 3vh; */
+  }
+}
+
+#Header .nav-item a:hover {
+  color: #21bf73;
   text-decoration: underline;
-  text-decoration-color: teal;
+  transform: scale(1.2);
+  text-decoration-color: #fd5e53;
 }
 #Header .toggbtn{
   background-color: #382c2d;
-    border: 2px solid #33631b;
+    border: 2px solid #21bf73;
     border-radius: 8.25rem;
 }
 /* header section ends here */
@@ -78,8 +93,9 @@ body {
 }
 #about .form-group span{
   padding: 5px 5px 2px;
+  margin-bottom: 1px;
   border-radius: 10%;
-  background-color: green;
+  background-color: #21bf73;
   color: white;
 }
 @media (max-width:550px){
@@ -96,6 +112,7 @@ body {
 
 /* Card footer start */
 .card-footer{
+  background-color: #21bf73;
   padding: 10px 100px !important;
 }
 .social-media{
@@ -115,7 +132,7 @@ color: #a8df65;
 }
 @media (max-width:500px){
   .card-footer{
-    padding: 10px 20px !important;
+    padding: 10px 40px !important;
   }
 }
 /* Card footer end */
